@@ -69,7 +69,7 @@ window.onload = function() {
 
 function getCurrentPrice(coin, vue) {
     let http = new XMLHttpRequest();
-    let cors_proxy = 'http://cors-proxy.htmldriven.com/?url=';
+    let cors_proxy = 'https://cors-anywhere.herokuapp.com/';
     if (coin == 'btc') {
         var api = cors_proxy + 'https://api.cryptowat.ch/markets/gdax/btcusd/price';
     } else if (coin == 'eth') {
@@ -78,7 +78,7 @@ function getCurrentPrice(coin, vue) {
     http.open("GET", api, true);
     http.onload = function() {
         var data = JSON.parse(http.responseText);
-        vue.currentPrice = JSON.parse(data.body).result.price;
+        vue.currentPrice = data.result.price;
     }
     http.send();
 }
