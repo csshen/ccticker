@@ -1,0 +1,42 @@
+<!-- Bitcoin price landing page --> 
+<!-- created 12.26.17 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ccticker</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="shortcut icon" href="favicon.png">
+
+
+</head>
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tween.js@16.3.4"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="script.js"></script>
+
+<div id="priceBanner">
+  <div id="container">
+    <p>${{ animatedPrice }}</p>
+    <p id="caption">{{ currency }}</p>
+  </div>
+</div>
+
+<div id="switch">
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary-outline on" @click="turnOnBTC()" id="btc">BTC</button>
+    <button type="button" class="btn btn-primary-outline" @click="turnOnETH()" id="eth">ETH</button>
+  </div>
+</div>
+
+<div id="myTime">
+  <p id="myDate">{{ date }}</p>
+  <p id="myClock">{{ time }}</p>
+</div>
+
+
+</body>
+</html>

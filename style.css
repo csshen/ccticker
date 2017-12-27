@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+
+html, body {
+  background: #1488CC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100%;
+  width: 100%;
+}
+#container {
+  position: absolute;
+  width: 100%;
+  top: 26%;
+  text-align: center;
+}
+#priceBanner {
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  font-size: 100px;
+}
+#caption {
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+.btn {
+  background-color: transparent;
+  color: white;
+  font-size: 10px;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+}
+
+#switch {
+  position: absolute;
+  left: 1%;
+  bottom: 2%;
+        outline: none;
+}
+.btn-primary-outline {
+  background-color: transparent;
+  border-color: #ccc;
+}
+
+.on {
+  color: black;
+  background-color: white;
+}
+
+#myTime {
+  position: absolute;
+  text-align: center;
+  bottom: 1%;
+  width: 50%;
+  left: 25%;
+  color: white;
+  background-color: transparent;
+  font-family: Roboto, sans-serif;
+}
+#myClock {
+  font-weight: 100;
+}
+#myDate {
+  font-weight: 300;
+}
